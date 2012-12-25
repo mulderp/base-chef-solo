@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+# cookbook 'rvm',
+#   :git => 'https://github.com/fnichol/chef-rvm'
+
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'
+
+cookbook 'apt'
+cookbook 'rvm', :git => 'https://github.com/fnichol/chef-rvm.git'
+cookbook 'omnibus-updater', :git => 'https://github.com/hw-cookbooks/omnibus_updater.git'
+cookbook 'sqlite', :git => 'https://github.com/opscode-cookbooks/sqlite.git'
+cookbook 'vim', :git => 'https://github.com/opscode-cookbooks/vim.git'
+# cookbook 'apache', :git => 'http://github.com/opscode-cookbooks/apache2'
+cookbook 'passenger_apache2', :git => 'http://github.com/opscode-cookbooks/passenger_apache2'
+# cookbook 'rvm_passenger', :git => 'https://github.com/fnichol/chef-rvm_passenger'
+cookbook 'chef_handler'
+cookbook 'minitest-handler'
+# cookbook 'arangodb', :git => 'https://github.com/jbianquetti/chef-arangodb.git'
+
+# cookbook 'chef-rvm', :git => 'git://gitorious.org/chef-cookbooks/chef-rvm.git'
+
+
