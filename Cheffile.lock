@@ -1,0 +1,67 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apache2 (1.4.0)
+    apt (1.7.0)
+    build-essential (1.3.2)
+    chef_handler (1.1.2)
+    minitest-handler (0.1.2)
+      chef_handler (>= 0.0.0)
+
+GIT
+  remote: git://github.com/mdxp/nodejs-cookbook.git
+  ref: master
+  sha: 9e39a20f5c9a08542fc21915aa357672634ce589
+  specs:
+    nodejs (1.0.2)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+
+GIT
+  remote: http://github.com/opscode-cookbooks/passenger_apache2
+  ref: master
+  sha: 793f7bbaac7a883d5f9ef1414260718e33958ae8
+  specs:
+    passenger_apache2 (1.1.0)
+      apache2 (>= 1.0.4)
+      build-essential (>= 0.0.0)
+
+GIT
+  remote: https://github.com/fnichol/chef-rvm.git
+  ref: master
+  sha: 66870f9eac2971498dcac0333d4b758d439fd052
+  specs:
+    rvm (0.9.1)
+
+GIT
+  remote: https://github.com/hw-cookbooks/omnibus_updater.git
+  ref: master
+  sha: 9c35006e9795bdb0cfd54a5c75e2734923f17bb5
+  specs:
+    omnibus-updater (0.1.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/sqlite.git
+  ref: master
+  sha: 3efb50f4166f04f1afefa21f7f8fe7e9082b37ed
+  specs:
+    sqlite (1.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/vim.git
+  ref: master
+  sha: 88e8d018267d2cd5cfa3260ce55a0025f52dae6f
+  specs:
+    vim (1.0.2)
+
+DEPENDENCIES
+  apt (>= 0)
+  chef_handler (>= 0)
+  minitest-handler (>= 0)
+  nodejs (>= 0)
+  omnibus-updater (>= 0)
+  passenger_apache2 (>= 0)
+  rvm (>= 0)
+  sqlite (>= 0)
+  vim (>= 0)
+

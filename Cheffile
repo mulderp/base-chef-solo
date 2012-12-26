@@ -29,3 +29,4 @@ cookbook 'minitest-handler'
 # cookbook 'chef-rvm', :git => 'git://gitorious.org/chef-cookbooks/chef-rvm.git'
 
 
+cookbook 'nodejs', :git => 'git://github.com/mdxp/nodejs-cookbook.git'

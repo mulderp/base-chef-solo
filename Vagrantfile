@@ -12,15 +12,15 @@ Vagrant::Config.run do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
-    # chef.recipe_url = "http://files.vagrantup.com/getting_started/cookbooks.tar.gz"
-    # chef.add_recipe("vagrant_main")
+    chef.recipe_url = "http://files.vagrantup.com/getting_started/cookbooks.tar.gz"
+    chef.add_recipe("vagrant_main")
 
     chef.add_recipe "apt"
     # chef.add_recipe "omnibus-updater"
     chef.add_recipe "vim"
     chef.add_recipe "sqlite"
-    chef.add_recipe "passenger_apache2"
     chef.add_recipe "nodejs"
+    chef.add_recipe "passenger_apache2"
     # chef.add_recipe "apache2"
   #  chef.add_recipe "rvm"
   #  chef.add_recipe "rvm::system"
